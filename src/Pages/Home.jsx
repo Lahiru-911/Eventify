@@ -2,63 +2,75 @@ import { useState } from "react";
 
 const productData = [
   {
-    title: "Boat Yard Projects",
-    description: "Transforming the Boat Yard: With our IT solutions...",
+    title: "Upcoming Events",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, nisi.",
     imageUrl: "https://placehold.co/600x400",
   },
   {
-    title: "Travels & Tour Projects",
-    description: "Embarking on an Exciting Journey: Leveraging our IT...",
+    title: "Upcoming Events",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, nisi.",
     imageUrl: "https://placehold.co/600x400",
   },
   {
-    title: "Garment Company Projects",
-    description: "Crafting Efficiency with Technology: Our IT Solutions...",
+    title: "Upcoming Events",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, nisi.",
     imageUrl: "https://placehold.co/600x400",
   },
   {
-    title: "HP Servers & Switches",
-    description: "HP Server delivers unparalleled performance and...",
+    title: "Upcoming Events",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, nisi.",
     imageUrl: "https://placehold.co/600x400",
   },
   {
-    title: "Dell Servers & Switches",
-    description: "Elevate your IT infrastructure with Dell Servers. Trusted...",
+    title: "Upcoming Events",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, nisi.",
     imageUrl: "https://placehold.co/600x400",
   },
   {
-    title: "Lenovo Servers",
-    description: "Lenovo servers provide unmatched performance and...",
+    title: "Upcoming Events",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, nisi.",
     imageUrl: "https://placehold.co/600x400",
   },
   {
-    title: "Web Development",
-    description: "Elevating Your Online Presence: Our IT Solutions Company...",
+    title: "Upcoming Events",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, nisi.",
     imageUrl: "https://placehold.co/600x400",
   },
   {
-    title: "Mobile App Development",
-    description: "Innovating Your Digital Experience: Our IT Solutions...",
+    title: "Upcoming Events",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, nisi.",
     imageUrl: "https://placehold.co/600x400",
   },
   {
-    title: "Maintains",
-    description: "Our IT solution company provides seamless software...",
+    title: "Upcoming Events",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, nisi.",
     imageUrl: "https://placehold.co/600x400",
   },
   {
-    title: "Cisco Products",
-    description: "Boost your network with top-notch Cisco products from...",
+    title: "Upcoming Events",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, nisi.",
     imageUrl: "https://placehold.co/600x400",
   },
   {
-    title: "Aruba Products",
-    description: "Our IT Solutions Company Offers High-Quality Laptops...",
+    title: "Upcoming Events",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, nisi.",
     imageUrl: "https://placehold.co/600x400",
   },
   {
-    title: "Laptops",
-    description: "Crafting Efficiency with Technology: Our IT Solutions...",
+    title: "Upcoming Events",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, nisi.",
     imageUrl: "https://placehold.co/600x400",
   },
 ];
