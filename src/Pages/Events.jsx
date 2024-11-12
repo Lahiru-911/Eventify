@@ -1,9 +1,5 @@
-
-
 const Events = () => {
-  return (
-    <></>
-  )
-}
+  return <></>;
+};
 
-export default Events
+export default Events;

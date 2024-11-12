@@ -1,4 +1,5 @@
 import { Link as RouterLink, useLocation } from "react-router-dom";
+import Logo from "../../assets/rs-logo.png";
 import "./NavBar.css";
 import { useEffect, useState } from "react";
 import {
@@ -77,7 +78,7 @@ const NavBar = () => {
           <NavbarItem key={index}>
             <RouterLink
               to={item.path}
-              onClick={() => setActiveItem(item.name)} // Set active item on click
+              onClick={() => setActiveItem(item.name)}
               className={`${
                 activeItem === item.name
                   ? "text-[#0081FB] font-bold"
