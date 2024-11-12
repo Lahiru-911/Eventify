@@ -31,6 +31,45 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* Why Residue Solution */}
+      <div className="grid md:grid-cols-2 m-4 md:m-6 lg:m-7 xl:m-8">
+        <div>
+          <h1 className="text-[#D8D8D8] text-left font-bold text-5xl sm:text-6xl md:text-7xl lg:text-9xl xl:text-[140px] 2xl:text-[180px]">
+            WHY
+            <br />
+            PARTY
+            <br /> PLUS
+          </h1>
+        </div>
+        <div className="grid grid-rows-2">
+          {/* First Tagline */}
+          <div className="my-1 md:my-0">
+            <h1 className="font-light w-full md:w-11/12 lg:w-11/12 xl:w-10/12 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+              Our primary focus is on Events
+            </h1>
+            <p className="text-justify my-1 md:my-3 lg:my-4 w-5/6 lg:w-10/12 xl:w-3/4 text-[#808080] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+              facere aliquam laborum numquam, dolorem harum nisi asperiores. Ex
+              asperiores, qui laborum magnam vero quos, modi sint veritatis,
+              officiis illo impedit.
+            </p>
+          </div>
+          {/* Second Tagline */}
+          <div className="my-1 md:my-3 lg:my-4">
+            <h1 className="font-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+              We focus on Events
+            </h1>
+            <p className="text-justify my-1 md:my-3 lg:my-4 w-5/6 lg:w-10/12 xl:w-3/4 text-[#808080] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatum molestias totam eligendi, dignissimos necessitatibus
+              iusto asperiores veritatis! Veniam corporis neque pariatur
+              perspiciatis porro, voluptatibus magni, voluptas provident, iure
+              eveniet suscipit!
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
