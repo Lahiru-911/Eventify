@@ -11,7 +11,7 @@ function App() {
         <Router>
           <NavBar />
           <AppRouter />
-        </Router>
+          </Router>
       </NextUIProvider>
     </>
   );
