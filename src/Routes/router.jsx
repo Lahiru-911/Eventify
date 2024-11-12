@@ -4,7 +4,7 @@ import About from "../Pages/About";
 import Events from "../Pages/Events";
 import Contact from "../Pages/Contact";
 
-function router() {
+function AppRouter() {
   return (
     <>
       <Routes>
@@ -17,4 +17,4 @@ function router() {
   );
 }
 
-export default router;
+export default AppRouter;
