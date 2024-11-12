@@ -1,3 +1,80 @@
+import { useState } from "react";
+
+const productData = [
+  {
+    title: "Boat Yard Projects",
+    description: "Transforming the Boat Yard: With our IT solutions...",
+    imageUrl: "https://residuesolution.com/assets/img/products/boat.png",
+  },
+  {
+    title: "Travels & Tour Projects",
+    description: "Embarking on an Exciting Journey: Leveraging our IT...",
+    imageUrl: "https://residuesolution.com/assets/img/products/tourist.png",
+  },
+  {
+    title: "Garment Company Projects",
+    description: "Crafting Efficiency with Technology: Our IT Solutions...",
+    imageUrl: "https://residuesolution.com/assets/img/products/garment.png",
+  },
+  {
+    title: "HP Servers & Switches",
+    description: "HP Server delivers unparalleled performance and...",
+    imageUrl: "https://residuesolution.com/assets/img/products/800x800.png",
+  },
+  {
+    title: "Dell Servers & Switches",
+    description: "Elevate your IT infrastructure with Dell Servers. Trusted...",
+    imageUrl: "https://residuesolution.com/assets/img/products/dellservers.png",
+  },
+  {
+    title: "Lenovo Servers",
+    description: "Lenovo servers provide unmatched performance and...",
+    imageUrl:
+      "https://residuesolution.com/assets/img/products/lenovoservers.png",
+  },
+  {
+    title: "Web Development",
+    description: "Elevating Your Online Presence: Our IT Solutions Company...",
+    imageUrl: "https://residuesolution.com/assets/img/products/website.png",
+  },
+  {
+    title: "Mobile App Development",
+    description: "Innovating Your Digital Experience: Our IT Solutions...",
+    imageUrl: "https://residuesolution.com/assets/img/products/mobileapp.png",
+  },
+  {
+    title: "Maintains",
+    description: "Our IT solution company provides seamless software...",
+    imageUrl: "https://residuesolution.com/assets/img/products/800x8002.png",
+  },
+  {
+    title: "Cisco Products",
+    description: "Boost your network with top-notch Cisco products from...",
+    imageUrl: "https://residuesolution.com/assets/img/products/cisco.png",
+  },
+  {
+    title: "Aruba Products",
+    description: "Our IT Solutions Company Offers High-Quality Laptops...",
+    imageUrl: "https://residuesolution.com/assets/img/products/aruba.png",
+  },
+  {
+    title: "Laptops",
+    description: "Crafting Efficiency with Technology: Our IT Solutions...",
+    imageUrl:
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=95&.v=1708367688034",
+  },
+  {
+    title: "Desktops",
+    description: "Our IT Solutions Company Provides Premium Desktops,...",
+    imageUrl: "https://residuesolution.com/assets/img/products/desktop.png",
+  },
+  {
+    title: "Accessories",
+    description: "Our IT Solutions Company Offers a Range...",
+    imageUrl: "https://residuesolution.com/assets/img/products/accessories.png",
+  },
+];
+
 const Home = () => {
   return (
     <>
@@ -14,16 +91,13 @@ const Home = () => {
           <div className="absolute inset-0 z-10 bg-white/60 opacity-15 rounded-large"></div>
 
           {/* Text Overlay  */}
-          <div className="absolute inset-0 z-20 m-4 sm:m-5 md:m-6 lg:m- xl:m-8 2xl:m-10 text-white flex flex-col justify-center items-start">
+          <div className="absolute inset-0 z-20 m-4 sm:m-5 md:m-6 lg:m-8 2xl:m-10 text-white flex flex-col justify-center items-start">
             <h1 className="uppercase m-1 mt-20 md:mt-60 lg:mt-64 xl:mt-64 2xl:mt-24 font-extralight text-4xl sm:text-5xl md:text-8xl lg:text-9xl xl:text-[140px] 2xl:text-[160px]">
               Dream,
               <br />
               Plan,
             </h1>
             <div className="flex justify-center items-center gap-2 md:gap-4 2xl:gap-8">
-              {/* <Link to="/contact">
-                <MagnetButton />
-              </Link> */}
               <h1 className="uppercase italic font-extralight text-4xl sm:text-5xl md:text-8xl lg:text-9xl xl:text-[140px] 2xl:text-[160px]">
                 Enjoy!
               </h1>
@@ -32,7 +106,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Why Residue Solution */}
+      {/* Why Party Plus */}
       <div className="grid md:grid-cols-2 m-4 md:m-6 lg:m-7 xl:m-8">
         <div>
           <h1 className="text-[#D8D8D8] text-left font-bold text-5xl sm:text-6xl md:text-7xl lg:text-9xl xl:text-[140px] 2xl:text-[180px]">
@@ -69,6 +143,33 @@ const Home = () => {
             </p>
           </div>
         </div>
+      </div>
+
+      {/* Box Cards Section */}
+      <div className="grid grid-cols-1 justify-items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-3 gap-10 m-8">
+        {productData.map((product, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center"
+          >
+            <div className="max-w-[500px] max-h-[700px] w-full relative rounded-2xl bg-white/60 shadow-2xl ring-1 ring-gray-900/10 transition-transform duration-300 ease-in-out hover:scale-105 z-10">
+              <img
+                className="rounded-2xl"
+                src={product.imageUrl}
+                alt={product.title}
+              />
+            </div>
+
+            <div className="mt-8 text-center">
+              <h1 className="text-xl sm:text-2xl lg:text-3xl 2xl:text-3xl m-2 text-center leading-none font-medium">
+                {product.title}
+              </h1>
+              <p className="text-sm sm:text-sm md:text-base lg:text-base xl:text-lg 2xl:text-xl font-normal capitalize text-center m-2 px-2">
+                {product.description}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );
