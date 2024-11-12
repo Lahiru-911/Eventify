@@ -4,74 +4,62 @@ const productData = [
   {
     title: "Boat Yard Projects",
     description: "Transforming the Boat Yard: With our IT solutions...",
-    imageUrl: "https://residuesolution.com/assets/img/products/boat.png",
+    imageUrl: "https://placehold.co/600x400",
   },
   {
     title: "Travels & Tour Projects",
     description: "Embarking on an Exciting Journey: Leveraging our IT...",
-    imageUrl: "https://residuesolution.com/assets/img/products/tourist.png",
+    imageUrl: "https://placehold.co/600x400",
   },
   {
     title: "Garment Company Projects",
     description: "Crafting Efficiency with Technology: Our IT Solutions...",
-    imageUrl: "https://residuesolution.com/assets/img/products/garment.png",
+    imageUrl: "https://placehold.co/600x400",
   },
   {
     title: "HP Servers & Switches",
     description: "HP Server delivers unparalleled performance and...",
-    imageUrl: "https://residuesolution.com/assets/img/products/800x800.png",
+    imageUrl: "https://placehold.co/600x400",
   },
   {
     title: "Dell Servers & Switches",
     description: "Elevate your IT infrastructure with Dell Servers. Trusted...",
-    imageUrl: "https://residuesolution.com/assets/img/products/dellservers.png",
+    imageUrl: "https://placehold.co/600x400",
   },
   {
     title: "Lenovo Servers",
     description: "Lenovo servers provide unmatched performance and...",
-    imageUrl:
-      "https://residuesolution.com/assets/img/products/lenovoservers.png",
+    imageUrl: "https://placehold.co/600x400",
   },
   {
     title: "Web Development",
     description: "Elevating Your Online Presence: Our IT Solutions Company...",
-    imageUrl: "https://residuesolution.com/assets/img/products/website.png",
+    imageUrl: "https://placehold.co/600x400",
   },
   {
     title: "Mobile App Development",
     description: "Innovating Your Digital Experience: Our IT Solutions...",
-    imageUrl: "https://residuesolution.com/assets/img/products/mobileapp.png",
+    imageUrl: "https://placehold.co/600x400",
   },
   {
     title: "Maintains",
     description: "Our IT solution company provides seamless software...",
-    imageUrl: "https://residuesolution.com/assets/img/products/800x8002.png",
+    imageUrl: "https://placehold.co/600x400",
   },
   {
     title: "Cisco Products",
     description: "Boost your network with top-notch Cisco products from...",
-    imageUrl: "https://residuesolution.com/assets/img/products/cisco.png",
+    imageUrl: "https://placehold.co/600x400",
   },
   {
     title: "Aruba Products",
     description: "Our IT Solutions Company Offers High-Quality Laptops...",
-    imageUrl: "https://residuesolution.com/assets/img/products/aruba.png",
+    imageUrl: "https://placehold.co/600x400",
   },
   {
     title: "Laptops",
     description: "Crafting Efficiency with Technology: Our IT Solutions...",
-    imageUrl:
-      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=95&.v=1708367688034",
-  },
-  {
-    title: "Desktops",
-    description: "Our IT Solutions Company Provides Premium Desktops,...",
-    imageUrl: "https://residuesolution.com/assets/img/products/desktop.png",
-  },
-  {
-    title: "Accessories",
-    description: "Our IT Solutions Company Offers a Range...",
-    imageUrl: "https://residuesolution.com/assets/img/products/accessories.png",
+    imageUrl: "https://placehold.co/600x400",
   },
 ];
 
@@ -154,7 +142,7 @@ const Home = () => {
           >
             <div className="max-w-[500px] max-h-[700px] w-full relative rounded-2xl bg-white/60 shadow-2xl ring-1 ring-gray-900/10 transition-transform duration-300 ease-in-out hover:scale-105 z-10">
               <img
-                className="rounded-2xl"
+                className="rounded-2xl w-full h-full object-cover"
                 src={product.imageUrl}
                 alt={product.title}
               />
