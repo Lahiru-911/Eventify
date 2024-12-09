@@ -8,11 +8,36 @@ const Home = () => {
       imgSrc:
         "https://images.pexels.com/photos/3756766/pexels-photo-3756766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
-    { id: 2, title: "Educational & Business", imgSrc: "" },
-    { id: 3, title: "Cultural & Arts", imgSrc: "" },
-    { id: 4, title: "Sports & Fitness", imgSrc: "" },
-    { id: 5, title: "Technology & Innovation", imgSrc: "" },
-    { id: 6, title: "Travel & Adventure", imgSrc: "" },
+    {
+      id: 2,
+      title: "Educational & Business",
+      imgSrc:
+        "https://images.pexels.com/photos/29646491/pexels-photo-29646491/free-photo-of-graduation-celebration-with-cap-toss-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    },
+    {
+      id: 3,
+      title: "Cultural & Arts",
+      imgSrc:
+        "https://images.pexels.com/photos/29636836/pexels-photo-29636836/free-photo-of-traditional-fire-breather-performing-at-festival.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    },
+    {
+      id: 4,
+      title: "Sports & Fitness",
+      imgSrc:
+        "https://images.pexels.com/photos/29694798/pexels-photo-29694798/free-photo-of-group-of-male-runners-competing-in-foggy-marathon.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    },
+    {
+      id: 5,
+      title: "Technology & Innovation",
+      imgSrc:
+        "https://images.pexels.com/photos/8348740/pexels-photo-8348740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    },
+    {
+      id: 6,
+      title: "Travel & Adventure",
+      imgSrc:
+        "https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    },
   ];
   return (
     <div className="">
