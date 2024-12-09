@@ -9,7 +9,7 @@ function App() {
     <>
       <NextUIProvider>
         <Router>
-          {/* <NavBar /> */}
+          <NavBar />  
           <AppRouter />
         </Router>
       </NextUIProvider>
