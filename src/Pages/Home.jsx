@@ -3,6 +3,41 @@ import React from "react";
 const Home = () => {
   const filters = ["All", "Today", "Tomorrow", "This Weekend", "Free"];
 
+  const events = [
+    {
+      id: 1,
+      imgSrc:
+        "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      title: "",
+      description: "",
+      time: "",
+      price: "",
+      month: "",
+      date: "",
+    },
+    {
+      id: 2,
+      imgSrc:
+        "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      title: "",
+      description: "",
+      time: "",
+      price: "",
+      month: "",
+      date: "",
+    },
+    {
+      id: 3,
+      imgSrc:
+        "https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      title: "",
+      description: "",
+      time: "",
+      price: "",
+      month: "",
+      date: "",
+    },
+  ];
   const categories = [
     {
       id: 1,
@@ -99,13 +134,18 @@ const Home = () => {
         </div>
 
         {/* Event Cards */}
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center">
+          {events.map((event, id) => (
+            <div key={id} className="bg-white/60 rounded-2xl shadow-md">
+              <img
+                className="rounded-2xl"
+                src={event.imgSrc}
+                alt={event.title}
+              />
+            </div>
+            
+          ))}
+        </div>
       </div>
     </>
   );
