@@ -28,7 +28,7 @@ const Home = () => {
     },
     {
       id: 5,
-      title: "Technology & Innovation",
+      title: "Sports & Fitness",
       imgSrc:
         "https://images.pexels.com/photos/8348740/pexels-photo-8348740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
@@ -57,11 +57,11 @@ const Home = () => {
       </div>
 
       {/* Explore */}
-      <div className="mx-6">
-        <h2 className="font-medium tracking-wider leading-none text-start text-base sm:text-lg md:text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
+      <div className="mt-5 md:mt-7 lg:mt-9 mx-2 md:mx-8 lg:mx-10 xl:mx-12">
+        <h2 className="font-medium tracking-wider leading-none text-start m-2 p-2 text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
           Explore Categories
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 my-5 justify-items-center">
           {categories.map((category) => (
             <span key={category.id}>
               <img
@@ -69,7 +69,7 @@ const Home = () => {
                 src={category.imgSrc}
                 alt={category.title}
               />
-              {category.title}
+              <p className="font-normal text-center my-2 py-2 text-xs sm:text-sm md:text-base lg:text-base xl:text-xl 2xl:text-xl">{category.title}</p>
             </span>
           ))}
         </div>
