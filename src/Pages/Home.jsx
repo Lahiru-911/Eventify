@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Home = () => {
+  const [visibleEvents, setVisibleEvents] = useState(3);
+
+  const handleSeeMore = () => {
+    setVisibleEvents((prev) => prev + 3);
+  };
+
   const filters = ["All", "Today", "Tomorrow", "This Weekend", "Free"];
 
   const events = [
@@ -136,17 +142,31 @@ const Home = () => {
         {/* Event Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center">
           {events.map((event, id) => (
-            <div key={id} className="bg-white/60 rounded-2xl shadow-md">
+            <div
+              key={id}
+              className="bg-white/60 rounded-2xl shadow-md overflow-hidden"
+            >
               <img
-                className="rounded-2xl"
+                className="rounded-2xl w-full h-full object-cover"
                 src={event.imgSrc}
                 alt={event.title}
               />
             </div>
-            
           ))}
         </div>
       </div>
+
+      {/* See More Button */}
+      {visibleEvents < events.length && (
+        <div className="flex justify-center mt-6">
+          <button
+            onClick={handleSeeMore}
+            className="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600"
+          >
+            See More
+          </button>
+        </div>
+      )}
     </>
   );
 };
