@@ -1,6 +1,8 @@
 import React from "react";
 
 const Home = () => {
+  const filters = ["All", "Today", "Tomorrow", "This Weekend", "Free"];
+
   const categories = [
     {
       id: 1,
@@ -58,7 +60,7 @@ const Home = () => {
 
       {/* Explore */}
       <div className="my-5 md:my-7 lg:my-9 mx-2 md:mx-8 lg:mx-10 xl:mx-12">
-        <h2 className="font-medium tracking-wider leading-none text-start m-2 p-2 text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
+        <h2 className="font-medium tracking-wider leading-none text-start my-2 p-y2 text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
           Explore Categories
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 my-5 justify-items-center">
@@ -79,16 +81,31 @@ const Home = () => {
 
       {/* Popular Events */}
       <div className="mx-2 md:mx-8 lg:mx-10 xl:mx-12">
-        <h2 className="font-medium tracking-wider leading-none text-start m-2 p-2 text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
+        {/* Heading */}
+        <h2 className="font-medium tracking-wider leading-none text-start my-2 py-2 text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
           Popular Events in Sri Lanka
         </h2>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
+
+        {/* Filters */}
+        <div className="flex gap-4 mb-6">
+          {filters.map((filter, index) => (
+            <button
+              key={index}
+              className="hidden sm:block px-4 py-2 bg-none border-2 border-[#2e54ff] text-[#2e54ff] rounded-full shadow-2xl hover:bg-gray-100"
+            >
+              <p className="md:text-xs lg:text-sm xl:text-base">{filter}</p>
+            </button>
+          ))}
+        </div>
+
+        {/* Event Cards */}
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     </>
   );
