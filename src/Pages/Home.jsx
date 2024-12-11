@@ -57,15 +57,15 @@ const Home = () => {
       </div>
 
       {/* Explore */}
-      <div className="mx-28">
-        <h2 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+      <div className="mx-6">
+        <h2 className="font-medium tracking-wider leading-none text-start text-base sm:text-lg md:text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
           Explore Categories
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
           {categories.map((category) => (
             <span key={category.id}>
               <img
-                className="w-48 h-48 rounded-full object-cover"
+                className="w-20 h-20 sm:w-24 md:w-28 lg:w-28 xl:w-36 2xl:w-44 sm:h-24 md:h-28 lg:h-28 xl:h-36 2xl:h-44  rounded-full object-cover"
                 src={category.imgSrc}
                 alt={category.title}
               />
