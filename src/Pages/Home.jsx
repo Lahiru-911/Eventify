@@ -13,7 +13,7 @@ const Home = () => {
     {
       image:
         "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "Lakeside Camping at NuwaraEliya",
+      title: "Lakeside Camping at ",
       time: "8.30 AM - 17.30 PM",
       price: "Rs. 1,500",
       month: "Nov",
@@ -40,7 +40,7 @@ const Home = () => {
     {
       image:
         "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "Lakeside Camping at NuwaraEliya",
+      title: "Lakeside Camping at ",
       time: "8.30 AM - 17.30 PM",
       price: "Rs. 1,500",
       month: "Nov",
@@ -94,8 +94,8 @@ const Home = () => {
   ];
 
   const EventCard = ({ date, title, time, price, image, month }) => (
-    <div className=" rounded-2xl flex flex-col">
-      <div>
+    <div className=" rounded-2xl flex flex-col ">
+      <div className="mb-5">
         <img
           src={image}
           alt={title}
