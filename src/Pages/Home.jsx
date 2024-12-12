@@ -93,21 +93,31 @@ const Home = () => {
     },
   ];
 
-  const EventCard = ({ date, title, time, price, image }) => (
-    <div className="bg-gray-800 text-white p-4 rounded-lg shadow hover:shadow-lg transition">
-      <img
-        src={image}
-        alt={title}
-        className="rounded-lg mb-4 object-cover w-full h-48"
-      />
-      <div className="flex items-center text-blue-400 font-bold text-lg mb-2">
-        <span className="bg-gray-900 rounded-full px-3 py-1 text-blue-300">
-          {date}
-        </span>
+  const EventCard = ({ date, title, time, price, image, month }) => (
+    <div className=" rounded-2xl flex flex-col">
+      <div>
+        <img
+          src={image}
+          alt={title}
+          className="rounded-2xl object-cover w-full h-full"
+        />
+      </div> 
+      <div className="flex justify-between items-center px-5 bg-none">
+        <div className="w-20 h-20  flex flex-col items-center justify-center border-2 border-[#2e54ff] hover:bg-blue-100 text-blue-700 font-semibold rounded-full">
+          <span className="text-sm">{month}</span>
+          <span className="text-lg">{date}</span>
+        </div>
+        <div>
+          <h2 className="font-semibold text-lg mb-1">{title}</h2>
+
+          <p className="text-sm">{time}</p>
+
+          <p>
+            <span>🎟 </span>
+            {price}
+          </p>
+        </div>
       </div>
-      <div className="text-xl font-semibold">{title}</div>
-      <div className="text-gray-400 text-sm">{time}</div>
-      <div className="text-gray-200 font-bold mt-2">{price}</div>
     </div>
   );
 
@@ -207,7 +217,7 @@ const Home = () => {
         </div>
 
         {/* Event Cards */}
-        <div className="min-h-screen bg-gray-900 p-8">
+        <div className="min-h-screen p-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {events.map((event, index) => (
               <EventCard key={index} {...event} />
