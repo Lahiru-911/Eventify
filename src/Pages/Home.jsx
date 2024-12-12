@@ -85,18 +85,18 @@ const Home = () => {
   return (
     <>
       {/* Hero Video */}
-      <div className=" mx-auto m-2 md:m-4  relative rounded-lg shadow-2xl ring-1 ring-gray-900/10 h-screen max-w-screen-2xl">
+      <div className="relative h-screen max-w-screen">
         {/* Background Video */}
         <video
-          className="absolute top-0 left-0 rounded-large h-full w-full object-cover"
-          src="https://videos.pexels.com/video-files/4440816/4440816-hd_1920_1080_25fps.mp4"
+          className="absolute top-0 left-0  h-full w-full object-cover"
+          src="https://www.fathom.events/wp-content/uploads/2019/12/sfbg-a.mp4"
           autoPlay
           loop
           muted
         ></video>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-40 rounded-large h-full w-full object-cover"></div>
+        {/* <div className="absolute inset-0 bg-black bg-opacity-40 rounded-large h-full w-full object-cover"></div> */}
       </div>
 
       {/* Explore */}
