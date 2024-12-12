@@ -11,7 +11,8 @@ const Home = () => {
 
   const events = [
     {
-      image:
+      id: 1,
+      imgSrc:
         "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Lakeside Camping at NuwaraEliya",
       time: "8.30 AM - 17.30 PM",
@@ -20,7 +21,8 @@ const Home = () => {
       date: "25-26",
     },
     {
-      image:
+      id: 2,
+      imgSrc:
         "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Sound Of Christmas 2024",
       time: "8.30 AM - 17.30 PM",
@@ -29,7 +31,8 @@ const Home = () => {
       date: "21-22",
     },
     {
-      image:
+      id: 3,
+      imgSrc:
         "https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Sound Of Christmas 2024",
       time: "8.30 AM - 17.30 PM",
@@ -37,80 +40,67 @@ const Home = () => {
       month: "Aug",
       date: "15-16",
     },
-    {
-      image:
-        "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "Lakeside Camping at NuwaraEliya",
-      time: "8.30 AM - 17.30 PM",
-      price: "Rs. 1,500",
-      month: "Nov",
-      date: "25-26",
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "Sound Of Christmas 2024",
-      time: "8.30 AM - 17.30 PM",
-      price: "Rs. 1,500",
-      month: "Mar",
-      date: "21-22",
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "Sound Of Christmas 2024",
-      time: "8.30 AM - 17.30 PM",
-      price: "Rs. 1,500",
-      month: "Aug",
-      date: "15-16",
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "Lakeside Camping at NuwaraEliya",
-      time: "8.30 AM - 17.30 PM",
-      price: "Rs. 1,500",
-      month: "Nov",
-      date: "25-26",
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "Sound Of Christmas 2024",
-      time: "8.30 AM - 17.30 PM",
-      price: "Rs. 1,500",
-      month: "Mar",
-      date: "21-22",
-    },
-    {
-      image:
-        "https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      title: "Sound Of Christmas 2024",
-      time: "8.30 AM - 17.30 PM",
-      price: "Rs. 1,500",
-      month: "Aug",
-      date: "15-16",
-    },
+    // {
+    //   id: 4,
+    //   imgSrc:
+    //     "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    //   title: "Lakeside Camping at NuwaraEliya",
+    //   time: "8.30 AM - 17.30 PM",
+    //   price: "Rs. 1,500",
+    //   month: "Nov",
+    //   date: "25-26",
+    // },
+    // {
+    //   id: 5,
+    //   imgSrc:
+    //     "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    //   title: "Sound Of Christmas 2024",
+    //   time: "8.30 AM - 17.30 PM",
+    //   price: "Rs. 1,500",
+    //   month: "Mar",
+    //   date: "21-22",
+    // },
+    // {
+    //   id: 6,
+    //   imgSrc:
+    //     "https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    //   title: "Sound Of Christmas 2024",
+    //   time: "8.30 AM - 17.30 PM",
+    //   price: "Rs. 1,500",
+    //   month: "Aug",
+    //   date: "15-16",
+    // },
+    // {
+    //   id: 7,
+    //   imgSrc:
+    //     "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    //   title: "Lakeside Camping at NuwaraEliya",
+    //   time: "8.30 AM - 17.30 PM",
+    //   price: "Rs. 1,500",
+    //   month: "Nov",
+    //   date: "25-26",
+    // },
+    // {
+    //   id: 8,
+    //   imgSrc:
+    //     "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    //   title: "Sound Of Christmas 2024",
+    //   time: "8.30 AM - 17.30 PM",
+    //   price: "Rs. 1,500",
+    //   month: "Mar",
+    //   date: "21-22",
+    // },
+    // {
+    //   id: 9,
+    //   imgSrc:
+    //     "https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    //   title: "Sound Of Christmas 2024",
+    //   time: "8.30 AM - 17.30 PM",
+    //   price: "Rs. 1,500",
+    //   month: "Aug",
+    //   date: "15-16",
+    // },
   ];
-
-  const EventCard = ({ date, title, time, price, image }) => (
-    <div className="bg-gray-800 text-white p-4 rounded-lg shadow hover:shadow-lg transition">
-      <img
-        src={image}
-        alt={title}
-        className="rounded-lg mb-4 object-cover w-full h-48"
-      />
-      <div className="flex items-center text-blue-400 font-bold text-lg mb-2">
-        <span className="bg-gray-900 rounded-full px-3 py-1 text-blue-300">
-          {date}
-        </span>
-      </div>
-      <div className="text-xl font-semibold">{title}</div>
-      <div className="text-gray-400 text-sm">{time}</div>
-      <div className="text-gray-200 font-bold mt-2">{price}</div>
-    </div>
-  );
-
   const categories = [
     {
       id: 1,
@@ -207,14 +197,55 @@ const Home = () => {
         </div>
 
         {/* Event Cards */}
-        <div className="min-h-screen  p-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {events.map((event, index) => (
-              <EventCard key={index} {...event} />
-            ))}
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {events.map((event, id) => (
+            <div
+              key={id}
+              className="bg-white/60 rounded-2xl shadow-md overflow-hidden"
+            >
+              <img
+                className="rounded-2xl w-full h-full object-cover"
+                src={event.imgSrc}
+                alt={event.title}
+              />
+            </div>
+          ))}
+          {/* Event Details */}
+          {events.map((event, id) => (
+            <div key={id} className="flex justify-between items-center px-5">
+              <div className="w-20 h-20  flex flex-col items-center justify-center border-2 border-[#2e54ff] hover:bg-blue-100 text-blue-700 font-semibold rounded-full ">
+                <span className="text-sm">{event.month}</span>
+                <span className="text-lg">{event.date}</span>
+              </div>
+
+              <div>
+                <h2 className="font-semibold text-lg mb-1">{event.title}</h2>
+
+                <p className="text-sm">{event.time}</p>
+
+                <p>
+                  <span>🎟 </span>
+                  {event.price}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />  
       {/* See More Button */}
       {visibleEvents < events.length && (
         <div className="flex justify-center mt-6">
@@ -230,4 +261,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+

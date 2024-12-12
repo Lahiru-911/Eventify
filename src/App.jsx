@@ -4,6 +4,7 @@ import "./App.css";
 import NavBar from "./Components/NavBar/NavBar";
 import AppRouter from "./Routes/router";
 import Ths from "./Components/NavBar/ths";
+import EventGrid from "./Components/EventGrid";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <NavBar />  
           <AppRouter />
           {/* <Ths/> */}
+          {/* <EventGrid/> */}
         </Router>
       </NextUIProvider>
     </>
