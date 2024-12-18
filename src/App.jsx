@@ -5,6 +5,7 @@ import NavBar from "./Components/NavBar/NavBar";
 import AppRouter from "./Routes/router";
 import Ths from "./Components/NavBar/ths";
 import EventGrid from "./Components/EventGrid";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <AppRouter />
           {/* <Ths/> */}
           {/* <EventGrid/> */}
+          <Footer/>
         </Router>
       </NextUIProvider>
     </>

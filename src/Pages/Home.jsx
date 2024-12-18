@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { WavyBackground } from "../Components/WavyBackground/WavyBackground";
 
 const Home = () => {
   const [visibleEvents, setVisibleEvents] = useState(3);
@@ -101,7 +102,7 @@ const Home = () => {
           alt={title}
           className="rounded-2xl object-cover w-full h-full"
         />
-      </div> 
+      </div>
       <div className="flex justify-between items-center px-5 bg-none">
         <div className="w-20 h-20  flex flex-col items-center justify-center border-2 border-[#2e54ff] hover:bg-blue-100 text-blue-700 font-semibold rounded-full">
           <span className="text-sm">{month}</span>
@@ -225,6 +226,23 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* Discover Best */}
+      <div className="mx-2 md:mx-8 lg:mx-10 xl:mx-12">
+        {/* Heading */}
+        <h2 className="font-medium tracking-wider leading-none text-start my-2 py-2 text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
+          Discover Best of Online Events
+        </h2>
+        {/* Event Cards */}
+        <div className="min-h-screen p-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {events.map((event, index) => (
+              <EventCard key={index} {...event} />
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* See More Button */}
       {visibleEvents < events.length && (
         <div className="flex justify-center mt-6">
@@ -236,6 +254,9 @@ const Home = () => {
           </button>
         </div>
       )}
+
+      {/* Create an event with Eventify */}
+      <WavyBackground />
     </>
   );
 };
