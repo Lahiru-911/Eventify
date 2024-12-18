@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="">
         <FooterCarousel />
       </div>
-      <div className="bg-[#E6F2FF] flex-grow ">
+      <div className="bg-[#E0E5FF] flex-grow ">
         <FooterContent />
       </div>
     </div>
