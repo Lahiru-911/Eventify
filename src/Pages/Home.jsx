@@ -245,7 +245,7 @@ const Home = () => {
 
       {/* See More Button */}
       {visibleEvents < events.length && (
-        <div className="flex justify-center mt-6">
+        <div className="flex justify-center m-6">
           <button
             onClick={handleSeeMore}
             className="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600"

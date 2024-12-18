@@ -1,11 +1,8 @@
 import { WavySource } from "./WavySource";
-import { FaPhoneVolume } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
-import { IoLocationSharp } from "react-icons/io5";
 
 export function WavyBackground() {
   return (
-    <WavySource className="font-normal text-black font-inter">
+    <WavySource className="font-normal text-black">
       {/* Main heading section */}
       <div className="text-center">
         <p className="mt-6 md:mt-16 text-3xl sm:text-4xl md:text-5xl lg:text-6xl ">

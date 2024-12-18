@@ -77,8 +77,8 @@ const FooterCarousel = () => {
   return (
     <div className="bg-white">
       {/* Text-Tagline */}
-      <div className="m-3 sm:m-4 md:m-5 lg:m-6 xl:m-7 2xl:m-8 font-light text-center">
-        <h1 className="font-light text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+      <div className="font-light text-center">
+        <h1 className="font-light text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-3 sm:mb-4 md:mb-5 lg:mb-6 xl:mb-7 2xl:mb-8">
           Our Partners & Vendors
         </h1>
       </div>
