@@ -1,14 +1,26 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 
 const About = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true,
+      once: false, // Allow animations to trigger multiple times
     });
+
+    const handleScroll = () => {
+      AOS.refresh(); // Refresh AOS animations on scroll
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
   return (
     <>
       {/* Section 01 */}
@@ -51,7 +63,7 @@ const About = () => {
             <h1 className="font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
               About Us
             </h1>
-            <p className="mt-4 text-xs md:text-sm lg:text-base w-5/6 lg:w-2/3 text-justify">
+            <p className="mt-4 text-xs lg:text-sm xl:text-base w-5/6 lg:w-2/3 text-justify">
               Welcome to Eventify – your ultimate event management platform! We
               are passionate about helping individuals and organizations bring
               their visions to life with ease and creativity. At Eventify, we
