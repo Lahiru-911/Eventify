@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import CountDown from "../Components/CountDown/countdown";
 
 const About = () => {
   useEffect(() => {
@@ -91,6 +92,7 @@ const About = () => {
       </div>
 
       {/* Section 03 */}
+      <CountDown/>
     </>
   );
 };

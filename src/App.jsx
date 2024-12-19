@@ -12,11 +12,11 @@ function App() {
     <>
       <NextUIProvider>
         <Router>
-          <NavBar />  
+          <NavBar />
           <AppRouter />
           {/* <Ths/> */}
           {/* <EventGrid/> */}
-          <Footer/>
+          <Footer />
         </Router>
       </NextUIProvider>
     </>
