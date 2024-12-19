@@ -92,7 +92,7 @@ const About = () => {
       </div>
 
       {/* Section 03 */}
-      <CountDown/>
+      <CountDown />
     </>
   );
 };
