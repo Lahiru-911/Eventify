@@ -36,12 +36,12 @@ const About = () => {
             alt=""
           />
         </div>
-        <div className="absolute z-20 flex justify-between">
+        <div className="absolute z-20 flex justify-between mx-2 md:mx-8 lg:mx-10 xl:mx-12">
           <div className="flex flex-col justify-center items-start text-black text-left w-full h-auto p-2">
-            <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
+            <h1 className="font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
               About Us
             </h1>
-            <p className="mt-4 text-xs md:text-sm lg:text-base w-5/6 lg:w-2/3">
+            <p className="mt-4 text-xs md:text-sm lg:text-base w-5/6 lg:w-2/3 text-justify">
               Welcome to Eventify – your ultimate event management platform! We
               are passionate about helping individuals and organizations bring
               their visions to life with ease and creativity. At Eventify, we
@@ -59,7 +59,10 @@ const About = () => {
               Together, let's make magic happen!
             </p>
           </div>
-          <div className="max-w-[500px] max-h-[700px] w-full relative rounded-lg bg-white/60 shadow-2xl ring-1 ring-gray-900/10 transition-transform duration-300 ease-in-out hover:scale-105 z-10">
+          <div
+            data-aos="fade-left"
+            className="hidden sm:block max-w-[500px] max-h-[700px] w-full relative rounded-lg bg-white/60 shadow-2xl ring-1 ring-gray-900/10 transition-transform duration-300 ease-in-out hover:scale-105 z-10"
+          >
             <img src="" alt="" />
           </div>
         </div>
