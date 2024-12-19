@@ -1,4 +1,13 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <>
       {/* Section 01 */}
@@ -61,7 +70,7 @@ const About = () => {
           </div>
           <div
             data-aos="fade-left"
-            className="hidden sm:block max-w-[500px] max-h-[700px] w-full relative rounded-lg bg-white/60 shadow-2xl ring-1 ring-gray-900/10 transition-transform duration-300 ease-in-out hover:scale-105 z-10"
+            className="hidden sm:block max-w-[500px] max-h-[700px] w-full rounded-lg bg-white/60 shadow-2xl ring-1 ring-gray-900/10 "
           >
             <img src="" alt="" />
           </div>
