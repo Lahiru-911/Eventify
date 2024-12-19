@@ -3,7 +3,7 @@ import { SiWhatsapp } from "react-icons/si";
 const FooterContent = () => {
   return (
     <>
-      <div className="flex flex-col  gap-4 lg:gap-12 md:mx-4 lg:mx-6 xl:mx-8">
+      <div className="flex flex-col  gap-4 lg:gap-12 md:mx-4 lg:mx-6 xl:mx-8 text-black">
         <div className="grid grid-cols-2 lg:grid-cols-12 mt-5 md:mt-16 m-8 md:m-0">
           <div className="col-span-8 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-2 lg:gap- xl:gap- 2xl:gap-14">
             {/* Contact Us */}
