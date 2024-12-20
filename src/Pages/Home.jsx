@@ -205,7 +205,6 @@ const Home = () => {
           Popular Events in Sri Lanka
         </h2>
 
-        {/* Filters */}
         <div className="flex gap-4 mb-6">
           {filters.map((filter, index) => (
             <button
