@@ -266,6 +266,15 @@ const Home = () => {
         </div>
       )}
 
+      {/* Banner Section */}
+      <div className="relative max-w-full h-96 bg-white/60 shadow-2xl ring-1 ring-gray-900/10">
+        <img
+          className="w-full h-full object-cover"
+          src="https://placehold.co/600x400" // Replace with your desired image URL
+          alt="Banner"
+        />
+      </div>
+
       {/* Trending Events around the Sri Lanka */}
       <div className="mx-2 md:mx-8 lg:mx-10 xl:mx-12">
         {/* Heading */}
