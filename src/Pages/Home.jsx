@@ -226,11 +226,51 @@ const Home = () => {
         </div>
       </div>
 
+      {/* See More Button */}
+      {visibleEvents < events.length && (
+        <div className="flex justify-center m-6">
+          <button
+            onClick={handleSeeMore}
+            className="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600"
+          >
+            See More
+          </button>
+        </div>
+      )}
+
       {/* Discover Best */}
       <div className="mx-2 md:mx-8 lg:mx-10 xl:mx-12">
         {/* Heading */}
         <h2 className="font-medium tracking-wider leading-none text-start my-2 py-2 text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
           Discover Best of Online Events
+        </h2>
+        {/* Event Cards */}
+        <div className="min-h-screen p-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {events.map((event, index) => (
+              <EventCard key={index} {...event} />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* See More Button */}
+      {visibleEvents < events.length && (
+        <div className="flex justify-center m-6">
+          <button
+            onClick={handleSeeMore}
+            className="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600"
+          >
+            See More
+          </button>
+        </div>
+      )}
+
+      {/* Trending Events around the Sri Lanka */}
+      <div className="mx-2 md:mx-8 lg:mx-10 xl:mx-12">
+        {/* Heading */}
+        <h2 className="font-medium tracking-wider leading-none text-start my-2 py-2 text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
+          Trending Events around the Sri Lanka
         </h2>
         {/* Event Cards */}
         <div className="min-h-screen p-8">
