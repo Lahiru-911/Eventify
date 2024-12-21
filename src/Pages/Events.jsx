@@ -1,5 +1,9 @@
+import BannerSlider from "../Components/BannerSlider/BannerSlider";
+
 const Events = () => {
-  return <></>;
+  return <>
+  <BannerSlider/>
+  </>;
 };
 
 export default Events;
