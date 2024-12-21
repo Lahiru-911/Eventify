@@ -6,69 +6,94 @@ function BannerSlider() {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    speed: 1000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
+    centerMode: true,
+    centerPadding: "300px", // Adjust padding for how much of the adjacent slides to show
     responsive: [
       {
-        breakpoint: 1024, // For tablets and small screens
+        breakpoint: 1536, // 2xl
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
+          centerPadding: "100px", // Adjust for larger screens
         },
       },
       {
-        breakpoint: 768, // For mobile devices
+        breakpoint: 1280, // xl
         settings: {
           slidesToShow: 1,
+          centerPadding: "80px",
+        },
+      },
+      {
+        breakpoint: 1024, // lg
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "60px",
+        },
+      },
+      {
+        breakpoint: 768, // md
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "120px",
+        },
+      },
+      {
+        breakpoint: 640, // sm
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "0px",
         },
       },
     ],
   };
 
   return (
-    <div className="slider-container mx-auto max-w-7xl px-4">
+    <div className="w-full p-4">
       <Slider {...settings}>
         <div className="px-2">
           <img
-            src="https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg"
+            src="https://tickets.lk/assets/banner/4.jpg"
             alt="Cat"
             className="rounded-lg shadow-lg"
           />
         </div>
         <div className="px-2">
           <img
-            src="https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg"
+            src="https://tickets.lk/assets/banner/2.jpg"
             alt="Cat"
             className="rounded-lg shadow-lg"
           />
         </div>
         <div className="px-2">
           <img
-            src="https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg"
+            src="https://tickets.lk/assets/banner/3.jpg"
             alt="Cat"
             className="rounded-lg shadow-lg"
           />
         </div>
         <div className="px-2">
           <img
-            src="https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg"
+            src="https://tickets.lk/assets/banner/5.jpg"
             alt="Cat"
             className="rounded-lg shadow-lg"
           />
         </div>
         <div className="px-2">
           <img
-            src="https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg"
+            src="https://tickets.lk/assets/banner/4.jpg"
             alt="Cat"
             className="rounded-lg shadow-lg"
           />
         </div>
         <div className="px-2">
           <img
-            src="https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg"
+            src="https://tickets.lk/assets/banner/2.jpg"
             alt="Cat"
             className="rounded-lg shadow-lg"
           />
