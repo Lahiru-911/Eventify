@@ -86,7 +86,7 @@ const About = () => {
             data-aos="fade-left"
             className="hidden sm:block max-w-[500px] max-h-[700px] w-full rounded-lg bg-white/60 shadow-2xl ring-1 ring-gray-900/10 "
           >
-            <img src="" alt="" />
+            <img className="w-full h-full object-cover" src="https://images.bzyjr9ji.ext.evbdomains.com/marketing/landingpages/assets/2023/organizer/a_organizer_event--creator-eventbrite-.webp" alt="" />
           </div>
         </div>
       </div>
