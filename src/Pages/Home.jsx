@@ -149,7 +149,7 @@ const Home = () => {
     },
     {
       id: 5,
-      title: "Sports & Fitness",
+      title: "Technology &Innovation",
       imgSrc:
         "https://images.pexels.com/photos/8348740/pexels-photo-8348740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },

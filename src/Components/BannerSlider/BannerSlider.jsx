@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 function BannerSlider() {
   const settings = {
-    dots: true, // Enables dots
+    dots: true,
     arrows: false, // Removes the left and right controllers
     infinite: true,
     slidesToShow: 1,
@@ -15,33 +15,6 @@ function BannerSlider() {
     cssEase: "linear",
     centerMode: true,
     centerPadding: "300px", // Adjust padding for how much of the adjacent slides to show
-    appendDots: (dots) => (
-      <div
-        style={{
-          backgroundColor: "transparent",
-          borderRadius: "10px",
-          padding: "10px",
-        }}
-      >
-        <ul
-          style={{ margin: "0px", display: "flex", justifyContent: "center" }}
-        >
-          {dots}
-        </ul>
-      </div>
-    ),
-    customPaging: (i) => (
-      <div
-        style={{
-          width: "10px",
-          height: "10px",
-          borderRadius: "50%",
-          backgroundColor: "white",
-          opacity: 0.5,
-          transition: "opacity 0.3s",
-        }}
-      />
-    ),
     responsive: [
       {
         breakpoint: 1536, // 2xl
@@ -68,7 +41,7 @@ function BannerSlider() {
         breakpoint: 768, // md
         settings: {
           slidesToShow: 1,
-          centerPadding: "120px",
+          centerPadding: "40px",
         },
       },
       {
@@ -81,51 +54,27 @@ function BannerSlider() {
     ],
   };
 
+  const images = [
+    "https://tickets.lk/assets/banner/4.jpg",
+    "https://tickets.lk/assets/banner/2.jpg",
+    "https://tickets.lk/assets/banner/3.jpg",
+    "https://tickets.lk/assets/banner/5.jpg",
+  ];
+
   return (
-    <div className="w-full p-4 mb-5">
+    <div className="max-h-screen mt-2 mb-10 ">
       <Slider {...settings}>
-        <div className="px-2">
-          <img
-            src="https://tickets.lk/assets/banner/4.jpg"
-            alt="Cat"
-            className="rounded-lg shadow-lg"
-          />
-        </div>
-        <div className="px-2">
-          <img
-            src="https://tickets.lk/assets/banner/2.jpg"
-            alt="Cat"
-            className="rounded-lg shadow-lg"
-          />
-        </div>
-        <div className="px-2">
-          <img
-            src="https://tickets.lk/assets/banner/3.jpg"
-            alt="Cat"
-            className="rounded-lg shadow-lg"
-          />
-        </div>
-        <div className="px-2">
-          <img
-            src="https://tickets.lk/assets/banner/5.jpg"
-            alt="Cat"
-            className="rounded-lg shadow-lg"
-          />
-        </div>
-        <div className="px-2">
-          <img
-            src="https://tickets.lk/assets/banner/4.jpg"
-            alt="Cat"
-            className="rounded-lg shadow-lg"
-          />
-        </div>
-        <div className="px-2">
-          <img
-            src="https://tickets.lk/assets/banner/2.jpg"
-            alt="Cat"
-            className="rounded-lg shadow-lg"
-          />
-        </div>
+        {images.map((src, index) => (
+          <div key={index} className="group overflow-hidden px-2">
+            <div className="w-full h-auto">
+              <img
+                src={src}
+                alt={`Slide ${index + 1}`}
+                className="w-full h-full object-cover rounded-2xl shadow-lg"
+              />
+            </div>
+          </div>
+        ))}
       </Slider>
     </div>
   );
