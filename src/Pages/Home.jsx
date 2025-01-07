@@ -51,7 +51,7 @@ const Home = () => {
         {/* Background Video */}
         <video
           className="absolute top-0 left-0  h-full w-full object-cover"
-          src="/home/h1.webm"
+          src="/home/h1.mp4"
           autoPlay
           loop
           muted

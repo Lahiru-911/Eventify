@@ -3,7 +3,6 @@
 
 
 
-
 <div class="p-4 bg-white shadow-md flex flex-wrap gap-4 rounded-md">
 {/* <!-- Month Dropdown --> */}
 <div class="flex flex-col">
@@ -340,7 +339,7 @@ const He = () => {
       </div>
 
       {/* Trending Events around the Sri Lanka */}
-      <section className="mx-2 md:mx-8 lg:mx-10 xl:mx-12">
+      <sect className="mx-2 md:mx-8 lg:mx-10 xl:mx-12">
         {/* Heading */}
         <h2 className="font-medium tracking-wider leading-none text-start my-2 py-2 text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
           Trending Events around the Sri Lanka
@@ -361,7 +360,7 @@ const He = () => {
             </button>
           </div>
         )}
-      </section>
+      </sect>
 
       {/* Create an event with Eventify */}
       <WavyBackground />
