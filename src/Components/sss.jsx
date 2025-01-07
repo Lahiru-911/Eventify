@@ -484,7 +484,7 @@ const He = () => {
       </div>
 
       {/* Discover Best */}
-      <div className="mx-2 md:mx-8 lg:mx-10 xl:mx-12">
+      <section className="mx-2 md:mx-8 lg:mx-10 xl:mx-12">
         {/* Heading */}
         <h2 className="font-medium tracking-wider leading-none text-start my-2 py-2 text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
           Discover Best of Online Events
@@ -505,7 +505,7 @@ const He = () => {
             </button>
           </div>
         )}
-      </div>
+      </section>
 
       {/* Banner Section */}
       <div className="relative max-w-full h-[600px] bg-white/60 shadow-2xl ring-1 ring-gray-900/10">
@@ -517,7 +517,7 @@ const He = () => {
       </div>
 
       {/* Trending Events around the Sri Lanka */}
-      <div className="mx-2 md:mx-8 lg:mx-10 xl:mx-12">
+      <section className="mx-2 md:mx-8 lg:mx-10 xl:mx-12">
         {/* Heading */}
         <h2 className="font-medium tracking-wider leading-none text-start my-2 py-2 text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
           Trending Events around the Sri Lanka
@@ -538,7 +538,7 @@ const He = () => {
             </button>
           </div>
         )}
-      </div>
+      </section>
 
       {/* Create an event with Eventify */}
       <WavyBackground />
