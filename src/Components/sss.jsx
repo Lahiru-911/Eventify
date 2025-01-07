@@ -249,7 +249,7 @@ export default ;
 import React, { useState } from "react";
 import { WavyBackground } from "../Components/WavyBackground/WavyBackground";
 
-const Home = () => {
+const He = () => {
   const [visibleEvents, setVisibleEvents] = useState(6);
 
   const handleSeeMore = () => {

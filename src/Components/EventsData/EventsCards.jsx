@@ -126,6 +126,7 @@ const EventCards = () => {
           <EventCard key={index} {...event} />
         ))}
       </div>
+       {/* See More Button */}
       {visibleEvents < events.length && (
         <div className="text-center mt-6">
           <button
