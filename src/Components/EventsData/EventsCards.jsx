@@ -1,33 +1,5 @@
 import React, { useState } from "react";
 
-const EventCard = ({ date, title, time, price, image, month }) => (
-  <div className=" rounded-2xl flex flex-col ">
-    <div className="mb-5">
-      <img
-        src={image}
-        alt={title}
-        className="rounded-2xl object-cover w-full h-full"
-      />
-    </div>
-    <div className="flex justify-between items-center px-5 bg-none">
-      <div className="w-20 h-20  flex flex-col items-center justify-center border-2 border-[#2e54ff] hover:bg-blue-100 text-blue-700 font-semibold rounded-full">
-        <span className="text-sm">{month}</span>
-        <span className="text-lg">{date}</span>
-      </div>
-      <div>
-        <h2 className="font-semibold text-lg mb-1">{title}</h2>
-
-        <p className="text-sm">{time}</p>
-
-        <p>
-          <span>🎟 </span>
-          {price}
-        </p>
-      </div>
-    </div>
-  </div>
-);
-
 const EventCards = () => {
   const [visibleEvents, setVisibleEvents] = useState(6);
 
@@ -35,8 +7,9 @@ const EventCards = () => {
     setVisibleEvents((prev) => prev + 3);
   };
 
-  const events = [
+  const eventsList = [
     {
+      category: "Entertainment",
       image:
         "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Lakeside Camping at ",
@@ -46,6 +19,7 @@ const EventCards = () => {
       date: "25-26",
     },
     {
+      category: "Educational",
       image:
         "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Sound Of Christmas 2024",
@@ -55,6 +29,7 @@ const EventCards = () => {
       date: "21-22",
     },
     {
+      category: "Cultural",
       image:
         "https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Sound Of Christmas 2024",
@@ -64,6 +39,7 @@ const EventCards = () => {
       date: "15-16",
     },
     {
+      category: "Sports",
       image:
         "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Lakeside Camping at ",
@@ -73,6 +49,7 @@ const EventCards = () => {
       date: "25-26",
     },
     {
+      category: "Technology",
       image:
         "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Sound Of Christmas 2024",
@@ -82,6 +59,7 @@ const EventCards = () => {
       date: "21-22",
     },
     {
+      category: "Business",
       image:
         "https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Sound Of Christmas 2024",
@@ -91,6 +69,7 @@ const EventCards = () => {
       date: "15-16",
     },
     {
+      category: "Sports",
       image:
         "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Lakeside Camping at NuwaraEliya",
@@ -100,6 +79,7 @@ const EventCards = () => {
       date: "25-26",
     },
     {
+      category: "Cultural",
       image:
         "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Sound Of Christmas 2024",
@@ -109,6 +89,7 @@ const EventCards = () => {
       date: "21-22",
     },
     {
+      category: "Entertainment",
       image:
         "https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       title: "Sound Of Christmas 2024",
@@ -119,15 +100,42 @@ const EventCards = () => {
     },
   ];
 
+  const EventCard = ({ date, title, time, price, image, month }) => (
+    <div className=" rounded-2xl flex flex-col ">
+      <div className="mb-5">
+        <img
+          src={image}
+          alt={title}
+          className="rounded-2xl object-cover w-full h-full"
+        />
+      </div>
+      <div className="flex justify-between items-center px-5 bg-none">
+        <div className="w-20 h-20  flex flex-col items-center justify-center border-2 border-[#2e54ff] hover:bg-blue-100 text-blue-700 font-semibold rounded-full">
+          <span className="text-sm">{month}</span>
+          <span className="text-lg">{date}</span>
+        </div>
+        <div>
+          <h2 className="font-semibold text-lg mb-1">{title}</h2>
+
+          <p className="text-sm">{time}</p>
+
+          <p>
+            <span>🎟 </span>
+            {price}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {events.slice(0, visibleEvents).map((event, index) => (
+        {eventsList.slice(0, visibleEvents).map((event, index) => (
           <EventCard key={index} {...event} />
         ))}
       </div>
-       {/* See More Button */}
-      {visibleEvents < events.length && (
+      {/* See More Button */}
+      {visibleEvents < eventsList.length && (
         <div className="text-center mt-6">
           <button
             onClick={handleSeeMore}
@@ -137,6 +145,7 @@ const EventCards = () => {
           </button>
         </div>
       )}
+      
     </>
   );
 };

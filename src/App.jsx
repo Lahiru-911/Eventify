@@ -4,6 +4,7 @@ import "./App.css";
 import NavBar from "./Components/NavBar/NavBar";
 import AppRouter from "./Routes/router";
 import Footer from "./Components/Footer/Footer";
+import AddEventForm from "./Components/AddEventForm";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         <Router>
           <NavBar />
           <AppRouter />
-          <Footer />
+          {/* <Footer /> */}
+          {/* <AddEventForm/> */}
         </Router>
       </NextUIProvider>
     </>
