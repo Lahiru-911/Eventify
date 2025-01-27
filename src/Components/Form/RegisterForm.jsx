@@ -4,7 +4,7 @@ const RegisterForm = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="text-center">
-        <h1 className="text-3xl font-bold">WELLCOME TO <span className="text-green-500">event<span className="text-blue-500">plus</span></span></h1>
+        <h1 className="text-3xl font-bold">WELLCOME TO <span className="text-green-500">Eventi<span className="text-blue-500">fy</span></span></h1>
         <p className="text-gray-600">Your Events Partner</p>
         <h2 className="mt-4 text-xl font-semibold">Create Account</h2>
         <div className="mt-6 bg-gray-800 text-white p-8 rounded-xl shadow-lg w-96 border border-cyan-500">

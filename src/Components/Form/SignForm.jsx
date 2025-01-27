@@ -10,7 +10,7 @@ const SignForm = () => {
         <h1 className="text-4xl font-extrabold text-gray-800 mb-4">
           Welcome Back{" "}
           <span className="text-green-500">
-            event<span className="text-blue-500">plus</span>
+            Eventi<span className="text-blue-500">fy</span>
           </span>
         </h1>
         <p className="text-gray-500 mb-6 text-lg">Your Events Partner</p>
