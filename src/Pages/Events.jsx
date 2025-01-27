@@ -54,7 +54,7 @@ const Events = () => {
       </div>
 
       {/* Events Display */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-2 md:mx-8 lg:mx-10 xl:mx-12">
         {filteredEvents.map((event, index) => (
           <div key={index} className="rounded-2xl flex flex-col">
             <div className="mb-5">
