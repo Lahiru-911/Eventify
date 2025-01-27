@@ -169,7 +169,7 @@ const FooterContent = () => {
           {/* Whatsapp Icon */}
           <div>
             <a
-              href="https://wa.me/94742777201"
+              href="https://wa.me/94775788667"
               target="_blank"
               rel="noopener noreferrer"
               className="fixed bottom-8 right-4 w-16 h-16 z-50 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
