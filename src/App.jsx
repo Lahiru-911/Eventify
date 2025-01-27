@@ -12,7 +12,7 @@ function App() {
       <NextUIProvider>
         <Router>
           <NavBar />
-          {/* <AppRouter /> */}
+          <AppRouter />
           <Footer />
           {/* <AddEventForm/> */}
         </Router>
