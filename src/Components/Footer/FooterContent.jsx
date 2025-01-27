@@ -147,10 +147,10 @@ const FooterContent = () => {
           {/* Copyright Section */}
           <div className=" text-sm lg:text-base xl:text-lg">
             <p>
-              © Copyright 2024. Powered By
+              © Copyright 2025. Powered By
               <a href="/" className="text-[#0081FB]">
                 {" "}
-                Residue Solutions
+                Eventify
               </a>
             </p>
           </div>
