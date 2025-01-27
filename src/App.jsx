@@ -12,8 +12,8 @@ function App() {
       <NextUIProvider>
         <Router>
           <NavBar />
-          <AppRouter />
-          {/* <Footer /> */}
+          {/* <AppRouter /> */}
+          <Footer />
           {/* <AddEventForm/> */}
         </Router>
       </NextUIProvider>
